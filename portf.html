@@ -6,20 +6,26 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="portf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <nav class="nav-main">
         <h3><span>P</span>ORTFOLIO</h3>
         <ul class="li-main">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="home">
+    <div id="home" class="home">
         <div class="h-main">
-            <div class="h-left">
+            <div class="about">
                 <p style="font-style: italic;">Welcome to my portfolio website!</p>
                 <h1>Hello, I'm <span>Aravind</span></h1><br>
                 <p>Aspiring pre-final year Electronics and Communication Engineering student at Sri Krishna College of Technology. I am passionate about user experience design, interface development, and web development. I enjoy tackling the challenges involved in building successful products and bring high energy to my work.
@@ -31,73 +37,101 @@
                 
             </div>
             <div class="h-right">
-                <img src="dess.avif" alt="error">
+                <img src="i3.avif" alt="error">
             </div>
-        </div><br>
-         <div class="tit-main">
-        <h1>Skills</h1>
+        </div>  
     </div>
-       <div class="skill-main">
-        <div class="s-name">
-            <div class="s-imgs">
-                <img src="c++.png">
-                <img src="java-vertical.svg">
-                <img src="python.png"><br>
-            </div>
+    
+    <hr class="section-divider">
+    <div id="skills" class="skills">
+        <div class="tit-main">
+            <h1>Skills</h1>
+        </div>
+        <div class="skill-main">
+            <div class="s-name">
+                <div class="s-imgs">
+                    <img src="c++.png">
+                    <img src="java-vertical.svg">
+                    <img src="python.png"><br>
+                </div><br>
                 <div class="s-content">
                     <span>C++ , Java, Python</span><br>
-                <p>Intermediate proficiency in C++, Java, and Python, with experience in OOP, basic algorithms, and standard libraries across these languages.</p>
+                    <p>Intermediate proficiency in C++, Java, and Python, with experience in OOP, basic algorithms, and standard libraries across these languages.</p>
                 </div>
-            
-        </div>
-        <div class="s-name">
-            <div class="s-imgs">
-                <img src="html.png">
-                <img src="css.png">
-                <img src="js.png">
-                <img src="react-2.svg"><br>
             </div>
+            <div class="s-name">
+                <div class="s-imgs">
+                    <img src="html.png">
+                    <img src="css.png">
+                    <img src="js.png">
+                    <img src="react-2.svg"><br>
+                </div><br>
                 <div class="s-content">
                     <span>HTML, CSS, JavaScript, React JS</span><br>
-                <p>Elementary proficiency in HTML, CSS, JavaScript, and React JS, with experience in basic web development, simple page creation, styling, and basic interactivity.</p>
+                    <p>Elementary proficiency in HTML, CSS, JavaScript, and React JS, with experience in basic web development, simple page creation, styling, and basic interactivity.</p>
                 </div>
-            
-        </div>
-        <div class="s-name">
-            <div class="s-imgs">
-                <img src="GIT.png">
-                <img src="SQL.svg">
-                <img src="figma.jpg"><br>
             </div>
+            <div class="s-name">
+                <div class="s-imgs">
+                    <img src="GIT.png">
+                    <img src="SQL.svg">
+                    <img src="figma.jpg"><br>
+                </div><br>
                 <div class="s-content">
                     <span>Git, MySQL, Figma</span><br>
-                <p>Beginner level knowledge of Git, MySQL, and Figma. Familiar with basic version control using Git, fundamental database management with MySQL, and basic design concepts with Figma.</p>
+                    <p>Beginner level knowledge of Git, MySQL, and Figma. Familiar with basic version control using Git, fundamental database management with MySQL, and basic design concepts with Figma.</p>
                 </div>
-            
+            </div>
         </div>
-       </div><br>
-    <div class="tit-main">
-        <h1>Contact Me</h1>
     </div>
-    <div class="con-main">
-    <div class="contact-left">
-        <img src="contt.avif" id="jkk">
+    <hr class="section-divider">
+    <div id="projects" class="projects">
+        <div class="tit-main">
+            <h1>Projects</h1>
+        </div>
+        <div class="p-main">
+            <div class="p-img">
+                <img src="proj.avif" alt="error">
+            </div>
+            <div class="project-list">
+                <div class="project-item">
+                    <h2>CricScore</h2>
+                    <p>CricScore is a real-time website providing updates on cricket matches, including scores, wickets, overs, and player details. It offers live commentary and interactive features for an engaging experience.</p>
+                </div>
+                <div class="project-item">
+                    <h2>Frolic</h2>
+                    <p>Frolic is a React-based social media feed app offering a seamless experience with features like styled cards, likes, comments, and a robust search function. It includes secure login and account creation for personalized interactions. With a sleek design and intuitive interface, Frolic redefines social media engagement and discovery.</p>
+                </div>
+                <div class="project-item">
+                    <h2>Online Electronics Accessories Store</h2>
+                    <p>Developing a full-stack web application for shopping electronics accessories, utilizing React for the front end and Node.js with MongoDB for the back end. The project includes features like product listings, user authentication, shopping cart functionality, and secure checkout. It aims to provide a user-friendly and efficient shopping experience. <br><br><span style="font-size: 15px; color: #2997ff;">Currently in development*</span></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contact-container">
-        <div class="contact-info">
-            <p>If you have any questions or would like to get in touch, feel free to reach out to me through the following:</p>
-            <a href="mailto:agaravind2005@gmail.com">Email : agaravind2005@gmail.com</a>
-            <a href="tel:+1234567890">Ph : +91 9751348044</a>
-            
-        </div><br>
-        <div class="soc-icons">
-            Check Out my : 
-            <a href="https://www.linkedin.com/in/aravind565/"><img src="linkedin.png" alt="error"></a>
-            <img src="github.png" alt="error">
-            <img src="instagram.png" alt="error">
-        </div><br>
+    <hr class="section-divider">
+    <div id="contact" class="contact">
+        <div class="tit-main">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="con-main">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>If you have any questions or would like to get in touch, feel free to reach out to me through the following:</p><br>
+                    <a href="mailto:agaravind2005@gmail.com">Email : agaravind2005@gmail.com</a>
+                    <a href="tel:+1234567890">Ph : +91 9751348044</a>
+                </div><br>
+                <div class="soc-icons">
+                    Check Out my : 
+                    <a href="https://www.linkedin.com/in/aravind565/"><img src="linkedin.png" alt="error"></a>
+                    <a href="https://github.com/Aravind565"><img src="github.png" alt="error"></a>
+                </div><br>
+            </div>
+            <div class="contact-left">
+                <img src="contt.avif" id="jkk">
+            </div>
+        </div>
     </div>
-</div>
     <footer>
         <p>&copy; 2024 Aravind. All Rights Reserved.</p>
     </footer>
