@@ -7,6 +7,7 @@ html {
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff9d;
 }
 
 .nav-main{
@@ -145,6 +146,8 @@ body{
 .s-name{ 
     display: flex;
     justify-content: center;
+    transition: all 200ms;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
 }
 
 .s-imgs{
@@ -172,6 +175,7 @@ body{
 .con-main{
     display: flex;
     justify-content: space-around;
+    
 }
 .contact-left{
     display: flex;
@@ -193,7 +197,7 @@ body{
     padding: 20px;
     border-radius: 8px;
     height: 350px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
     text-align: center;
 }
 
@@ -210,35 +214,63 @@ body{
 }
 .p-main{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-}
+    width: 100%;
+} 
 .p-img img{
     height: 500px;
 }
 .project-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    width: 60%;
+    width: 90%;
     justify-content: space-around;
 }
 
 .project-item {
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
     padding: 30px;
     border-radius: 5px;
+    transition: all 200ms; 
+} 
+
+.project-item a{
+    text-decoration: none;
+    color: #2997ff;
 }
 
+.s-name:hover, .project-item:hover{
+    transform: translateY(-8px);
+}
 .project-item h2 {
+    text-align: center;
     margin-top: 0;
     color: #2997ff;
+    font-size: 20px;
 }
 
 .project-item p {
     font-size: 16px;
     color: #555;
 }
-
+.project-item a{
+    margin-top: 25px;
+}
+.pro-img{
+    display: flex;
+    justify-content: center;
+}
+.pro-img img{
+    height: 260px;
+    width: 385px;
+}
+.con-contact{
+    color:#1662a9
+}
 footer {
     text-align: center;
     padding: 20px 0;
